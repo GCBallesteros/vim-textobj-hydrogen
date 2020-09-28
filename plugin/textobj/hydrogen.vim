@@ -17,7 +17,7 @@ function! s:select_a()
   " Just in case the notebook is malformed and doesnt
   " have a cell marker at the start.
   if start_line == 0
-    let start_line == 1
+    let start_line = 1
   endif
 
   if end_line == 0 " We are the last cell
@@ -40,9 +40,8 @@ function! s:select_i()
   " Just in case the notebook is malformed and doesnt
   " have a cell marker at the start.
   if start_line == 0
-    let start_line == 1
+    let start_line = 1
   endif
-  echoe start_line
 
   if end_line == 0 " We are the last cell
     let end_line = line('$')
