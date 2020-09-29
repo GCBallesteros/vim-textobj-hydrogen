@@ -1,4 +1,4 @@
-*textobj-hydrogen.txt*	Text objects for hydrogen stlye notebook cells
+*textobj-hydrogen.txt*	Text objects for hydrogen stlye python notebook cells
 
 Version 0.0.1
 
@@ -11,16 +11,20 @@ Copyright		|textobj-hydrogen-copyright|
 ==============================================================================
 INTRODUCTION					*textobj-hydrogen-introduction*
 
-The *textobj-hydrogen* plugin provides two new |text-objects| which are
-triggered by `ah` and `ih` respectively. You can use them when you have to
-deal with hydrogen style notebook cells.  This are usually encountered when
-transforming jupyter notebooks to plain text files with tools such as 
-jupytext and notedown.
+The *textobj-hydrogen* plugin provides two new |text-objects|, `ah` and `ih`,
+and backwards and forwards motion for them, `[h` and `]h` respectively. You
+can use them when you have to deal with hydrogen style python notebook cells.
+This are usually encountered when transforming jupyter notebooks to plain text
+files with tools such as jupytext and notedown. 
 
 All code cells start with `# %%` . The end of the cell is implicitly defined
 by either a new cell marker or the end of the file. The `ah` object includes
 the marker line while the `ih` does not. Both commands treat the end of the
 cell in the same way.
+
+The new objects and motions combined with a plugin that will allow the user to
+send input to a REPL running along the editor allows for an enhanced Jupyter
+notebook like experience.
 
 Latest version:
 http://github.com/GCBallesters/vim-textobj-hydrogen
@@ -28,7 +32,7 @@ http://github.com/GCBallesters/vim-textobj-hydrogen
 ==============================================================================
 COPYRIGHT					*textobj-hydrogen-copyright*
 
-  Copyright (c) Guillem Ballesters. Distributed under the same terms as Vim itself.
+  Copyright (c) Guillem Ballesteros. Distributed under the same terms as Vim itself.
   See |license|.
 
 vim:tw=78:ts=8:ft=help:norl:
